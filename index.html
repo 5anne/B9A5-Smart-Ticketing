@@ -251,32 +251,50 @@
             <div class="flex border-b-2 border-dashed pb-4"> 
               <div class="flex flex-1 items-center gap-1">
                 <p class="font-bold">Seat</p>
-                <p id="selected-seats" class="text-xs text-white font-bold bg-[#1DD100] rounded-3xl px-2">2</p>
+                <p id="selected-seats" class="text-xs text-white font-bold bg-[#1DD100] rounded-3xl px-2">0</p>
               </div>
                 <p class="flex-1 font-bold">Class</p>
                 <p class="font-bold">Price</p>
             </div>
-            <div class="flex text-[#03071280] font-medium py-4">
-              <p class="flex-1">C2</p>
-              <p class="flex-1">Economy</p>
-              <p>550</p>
+            <div id="selected-ticket-one" class="hidden">
+              <div class="flex text-[#03071280] font-medium pt-4">
+                <p id="ticket-name-one" class="flex-1">C2</p>
+                <p class="flex-1">Economy</p>
+                <p>550</p>
+              </div>
             </div>
-            <div class="flex text-[#03071280] font-medium border-b-2 border-[#03071226] pb-4">
-              <p class="flex-1">C2</p>
-              <p class="flex-1">Economy</p>
-              <p>550</p>
+            <div id="selected-ticket-two" class="hidden">
+              <div class="flex text-[#03071280] font-medium pt-4">
+                <p id="ticket-name-two" class="flex-1">C2</p>
+                <p class="flex-1">Economy</p>
+                <p>550</p>
+              </div>
+            </div>
+            <div id="selected-ticket-three" class="hidden">
+              <div class="flex text-[#03071280] font-medium pt-4">
+                <p id="ticket-name-three" class="flex-1">C2</p>
+                <p class="flex-1">Economy</p>
+                <p>550</p>
+              </div>
+            </div>
+            <div id="selected-ticket-four" class="hidden">
+              <div class="flex text-[#03071280] font-medium border-b-2 border-[#03071226] py-4">
+                <p id="ticket-name-four" class="flex-1">C2</p>
+                <p class="flex-1">Economy</p>
+                <p>550</p>
+              </div>
             </div>
             <div class="flex justify-between py-4">
               <p class="font-bold">Total Price</p>
-              <p class="font-bold">BDT 1100</p>
+              <p class="font-bold">BDT <span id="total-price">00</span></p>
             </div>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center" >
               <input class="rounded-lg pl-6 h-12 w-full bg-[#FFFFFF]" type="text" placeholder="Have any coupon?">
-              <button class="hover:bg-[#1DD10080] rounded-lg bg-[#1DD100] text-white h-8 px-4 absolute right-24 lg:right-48">Apply</button>
+              <button type="button" class="hover:bg-[#1DD10080] rounded-lg bg-[#1DD100] text-white h-8 px-4 absolute right-24 lg:right-48">Apply</button>
             </div>
             <div class="flex justify-between pt-4">
               <p class="font-bold">Grand Total</p>
-              <p class="font-bold">BDT 1100</p>
+              <p class="font-bold">BDT <span id="grand-price">00</span></p>
             </div>
           </div>
           <div>
