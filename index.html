@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <link rel="stylesheet" href="done.html">
+
   <link rel="stylesheet" href="Styles/new_year.css">
   <script src="https://kit.fontawesome.com/3eab15cf90.js" crossorigin="anonymous"></script>
 
@@ -85,25 +87,27 @@
     <section class="mx-6 lg:mx-20">
       <h2 class="text-3xl font-bold text-black text-center mb-8">Best offers for you</h2>
       <div class="lg:flex justify-center gap-8 mb-8">
-        <div class="flex justify-between p-8 bg-yellow-500 rounded-2xl lg:w-1/2 mb-8 lg:mb-0">
-          <div class="pr-4">
+        <div class="flex justify-around items-center bg-[#FFBF0F] rounded-2xl lg:w-1/2 mb-8 lg:mb-0">
+          <div class="">
             <h2 class="text-3xl font-extrabold text-black">15% OFF</h2>
             <p class="font-bold">on your next purchase</p>
             <p>use by January 2024</p>
           </div>
-          <div class="border-l-2 border-dashed pl-4 lg:pl-8">
+          <img class="h-40" src="images/cupon-devider.png" alt="">
+          <div>
             <h2 class="text-3xl font-bold text-black">NEW<span class="text-xl">1</span><span class="text-2xl">5</span>
             </h2>
             <p>Coupon Code</p>
           </div>
         </div>
-        <div class="flex justify-between p-8 bg-[#E37383] rounded-2xl lg:w-1/2">
-          <div class="pr-4">
+        <div class="flex justify-around items-center bg-[#F78C9C] rounded-2xl lg:w-1/2">
+          <div class="px-2 lg:px-0">
             <h2 class="text-3xl font-extrabold text-black">20% OFF</h2>
             <p class="font-bold">on your next purchase</p>
             <p>use by January 2024</p>
           </div>
-          <div class="border-l-2 border-dashed pl-4 lg:pl-8">
+          <img class="h-40" src="images/cupon-devider.png" alt="">
+          <div class="pr-1 lg:pr-0">
             <h2 class="text-3xl font-bold text-black">Couple <span class="text-2xl">20</span></h2>
             <p>Coupon Code</p>
           </div>
@@ -113,22 +117,23 @@
         <button class="btn border-[#32CD32] text-[#32CD32] bg-white">See All Offers</button>
       </div>
     </section>
-    <section class="mt-16 p-20 border-t-2 rounded-t-[60px] border-[#1DD100] bg-[#F7F8F8] ">
+    <section class="mt-16 p-4 lg:p-20 border-t-2 rounded-t-[60px] border-[#1DD100] bg-[#F7F8F8] ">
       <h1 class="text-3xl font-bold text-black text-center mb-4">P.H Paribahan</h1>
-      <p class="text-center text-gray-700">Yes, you can run unit tests and view the results directly within the app. The
-        integrated <br>testing features allow for a streamlined.</p>
-      <div class="flex items-center rounded-3xl bg-[#FFFFFF] mt-8">
-        <div class="bg-[#FFFFFF] m-8 w-5/6">
-          <div class="flex justify-between mb-6">
+      <p class="text-center text-gray-700">Yes, you can run unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined.</p>
+      <div class="lg:flex items-center rounded-3xl lg:bg-[#FFFFFF] mt-8">
+        <div class="bg-[#FFFFFF] p-4 lg:p-0 rounded-3xl m-8 w-5/6">
+          <div class="flex flex-col lg:flex-row lg:justify-between mb-6">
             <div class="flex items-center gap-4">
-              <img class="h-10" src="images/bus-logo.png" alt="">
+              <img class="h-6 lg:h-10" src="images/bus-logo.png" alt="">
               <div>
-                <h1 class="text-2xl font-bold text-black">Greenline Paribahan</h1>
+                <h1 class="lg:text-2xl font-bold text-black">Greenline Paribahan</h1>
                 <p class="text-gray-700">Coach-009-WEB ! AC_Business</p>
               </div>
             </div>
-            <button class="btn text-[#1DD100] bg-green-100"><img src="images/seat-green.png" alt="">40 Seats
-              left</button>
+            <div class="flex justify-end mt-6 lg:mt-0">
+              <button class="btn text-[#1DD100] bg-green-100"><img src="images/seat-green.png" alt="">40 Seats
+                left</button>
+            </div>
           </div>
           <div class="bg-[#F7F8F8] rounded-3xl px-6 py-2 font-bold">
             <div class="flex justify-between my-4 border-b-2 border-dashed pb-4">
@@ -139,22 +144,22 @@
               <p class="text-gray-500">Departure Time</p>
               <p>9:00 PM</p>
             </div>
-            <div class="flex justify-around my-4">
+            <div class="flex flex-col lg:flex-row justify-center lg:justify-around my-4 gap-4 lg:gap-0">
               <button class="btn bg-gray-200">Boarding Point - Laxmipur</button>
               <button class="btn bg-gray-200">Dropping Point - Bogura</button>
               <button class="btn bg-gray-200">Est. Time - 11 Hour</button>
             </div>
           </div>
         </div>
-        <img class="h-[358px]" src="images/info-devider.png" alt="">
-        <div class="flex flex-col justify-center items-center text-center bg-[#FFFFFF] p-12">
+        <img class="hidden lg:flex h-[358px]" src="images/info-devider.png" alt="">
+        <div class="flex flex-col justify-center items-center text-center bg-[#FFFFFF] p-12 rounded-3xl lg:rounded-none h-32 lg:h-0 lg:w-1/5">
             <img class="h-8 w-8" src="images/fare.png" alt="">
             <p class="text-2xl font-bold">550 Taka</p>
             <p class="text-gray-500 text-xl">Per Seat</p>
         </div>
       </div>
-      <div class="flex bg-[#FFFFFF] rounded-3xl p-8 mt-8">
-        <div class="border-r-2 border-dashed pr-8 w-3/5">
+      <div class="lg:flex bg-[#FFFFFF] rounded-3xl p-8 mt-8">
+        <div class="lg:border-r-2 border-dashed lg:pr-8 lg:w-3/5">
           <h1 class="text-2xl text-black font-bold border-b-2 border-dashed pb-4">Select Your Seat</h1>
           <div class="flex justify-between border-b-2 border-dashed py-4">
             <div class="flex gap-2">
@@ -169,80 +174,80 @@
           <div class="flex justify-end py-4">
             <img src="images/Group 56.png" alt="">
           </div>
-          <div class="">
+          <div>
             <div class="flex justify-around items-center mb-6">
               <h1>A</h1>
-              <button class="btn px-10">A1</button>
-              <button class="btn px-10 mr-16">A2</button>
-              <button class="btn px-10">A3</button>
-              <button class="btn px-10">A4</button>
+              <button class="btn lg:px-10">A1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">A2</button>
+              <button class="btn lg:px-10">A3</button>
+              <button class="btn lg:px-10">A4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>B</h1>
-              <button class="btn px-10">B1</button>
-              <button class="btn px-10 mr-16">B2</button>
-              <button class="btn px-10">B3</button>
-              <button class="btn px-10">B4</button>
+              <button class="btn lg:px-10">B1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">B2</button>
+              <button class="btn lg:px-10">B3</button>
+              <button class="btn lg:px-10">B4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>C</h1>
-              <button class="btn px-10">C1</button>
-              <button class="btn px-10 mr-16">C2</button>
-              <button class="btn px-10">C3</button>
-              <button class="btn px-10">C4</button>
+              <button class="btn lg:px-10">C1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">C2</button>
+              <button class="btn lg:px-10">C3</button>
+              <button class="btn lg:px-10">C4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>D</h1>
-              <button class="btn px-10">D1</button>
-              <button class="btn px-10 mr-16">D2</button>
-              <button class="btn px-10">D3</button>
-              <button class="btn px-10">D4</button>
+              <button class="btn lg:px-10">D1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">D2</button>
+              <button class="btn lg:px-10">D3</button>
+              <button class="btn lg:px-10">D4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>E</h1>
-              <button class="btn px-10">E1</button>
-              <button class="btn px-10 mr-16">E2</button>
-              <button class="btn px-10">E3</button>
-              <button class="btn px-10">E4</button>
+              <button class="btn lg:px-10">E1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">E2</button>
+              <button class="btn lg:px-10">E3</button>
+              <button class="btn lg:px-10">E4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>F</h1>
-              <button class="btn px-10">F1</button>
-              <button class="btn px-10 mr-16">F2</button>
-              <button class="btn px-10">F3</button>
-              <button class="btn px-10">F4</button>
+              <button class="btn lg:px-10">F1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">F2</button>
+              <button class="btn lg:px-10">F3</button>
+              <button class="btn lg:px-10">F4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>G</h1>
-              <button class="btn px-10">G1</button>
-              <button class="btn px-10 mr-16">G2</button>
-              <button class="btn px-10">G3</button>
-              <button class="btn px-10">G4</button>
+              <button class="btn lg:px-10">G1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">G2</button>
+              <button class="btn lg:px-10">G3</button>
+              <button class="btn lg:px-10">G4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>H</h1>
-              <button class="btn px-10">H1</button>
-              <button class="btn px-10 mr-16">H2</button>
-              <button class="btn px-10">H3</button>
-              <button class="btn px-10">H4</button>
+              <button class="btn lg:px-10">H1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">H2</button>
+              <button class="btn lg:px-10">H3</button>
+              <button class="btn lg:px-10">H4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>I</h1>
-              <button class="btn px-10">I1</button>
-              <button class="btn px-10 mr-16">I2</button>
-              <button class="btn px-10">I3</button>
-              <button class="btn px-10">I4</button>
+              <button class="btn lg:px-10">I1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">I2</button>
+              <button class="btn lg:px-10">I3</button>
+              <button class="btn lg:px-10">I4</button>
             </div>
             <div class="flex justify-around items-center mb-6">
               <h1>J</h1>
-              <button class="btn px-10">J1</button>
-              <button class="btn px-10 mr-16">J2</button>
-              <button class="btn px-10">J3</button>
-              <button class="btn px-10">J4</button>
+              <button class="btn lg:px-10">J1</button>
+              <button class="btn lg:px-10 mr-8 lg:mr-16">J2</button>
+              <button class="btn lg:px-10">J3</button>
+              <button class="btn lg:px-10">J4</button>
             </div>
           </div>
         </div>
-        <div class="px-8 w-2/5">
+        <div class="lg:px-8 lg:w-2/5">
           <h1 class="text-2xl text-black font-bold border-b-2 border-dashed pb-4">Select Your Seat</h1>
           <div class="bg-[#F7F8F8] rounded-3xl p-8 mt-6">
             <div class="flex border-b-2 border-dashed pb-4"> 
@@ -269,7 +274,7 @@
             </div>
             <div class="flex justify-between items-center">
               <input class="rounded-lg pl-6 h-12 w-full bg-[#FFFFFF]" type="text" placeholder="Have any coupon?">
-              <button class="rounded-lg bg-[#1DD100] text-white h-8 px-4 absolute right-48">Apply</button>
+              <button class="hover:bg-[#1DD10080] rounded-lg bg-[#1DD100] text-white h-8 px-4 absolute right-24 lg:right-48">Apply</button>
             </div>
             <div class="flex justify-between pt-4">
               <p class="font-bold">Grand Total</p>
@@ -292,7 +297,6 @@
         </div>
       </div>
     </section>
-
   </main>
   <footer class="p-8 lg:p-20 bg-[#1E1E1E] text-white ">
     <div class="lg:flex justify-between border-b-2 border-dashed  border-gray-400 mb-8 pb-8">
@@ -314,7 +318,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
