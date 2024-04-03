@@ -288,10 +288,17 @@
               <p class="font-bold">Total Price</p>
               <p class="font-bold">BDT <span id="total-price">00</span></p>
             </div>
-            <div class="flex justify-between items-center" >
-              <input class="rounded-lg pl-6 h-12 w-full bg-[#FFFFFF]" type="text" placeholder="Have any coupon?">
-              <button type="button" class="hover:bg-[#1DD10080] rounded-lg bg-[#1DD100] text-white h-8 px-4 absolute right-24 lg:right-48">Apply</button>
+            <div id="hidden-discount" class="hidden">
+              <div class="flex justify-between pb-4">
+                <p>Discount Price</p>
+                <p>BDT <span id="discount-price">00</span></p>
+              </div>
             </div>
+            <div class="flex justify-between items-center">
+              <input id="coupon-field" class="rounded-lg pl-6 h-16 w-full bg-[#FFFFFF]" type="text" placeholder="Have any coupon?" disabled>
+              <button onclick="discountPrice()" type="button" class="btn rounded-lg bg-[#1DD100] text-white px-4 absolute right-24 lg:right-48">Apply</button>
+            </div>
+            <p id="second-warning" class="hidden text-red-500 text-center">Warning: Wrong Coupon Code!</p>
             <div class="flex justify-between pt-4">
               <p class="font-bold">Grand Total</p>
               <p class="font-bold">BDT <span id="grand-price">00</span></p>

@@ -66,6 +66,10 @@ function changeNow(button) {
         for (const bg of buttons) {
             bg.disabled = true;
         }
+        const couponField = document.getElementById('coupon-field');
+        couponField.disabled = false;
+
+
     }
 
     const fortySeats = document.getElementById('forty-seats');
@@ -74,5 +78,42 @@ function changeNow(button) {
     fortySeats.innerText = result;
 
 
+}
+
+function discountPrice() {
+
+    const couponField = document.getElementById('coupon-field');
+    console.log(couponField.value);
+
+    const totalPrice = document.getElementById('total-price');
+    const grandPrice = document.getElementById('grand-price');
+    const discounted = document.getElementById('discount-price');
+    const hiddenDiscount = document.getElementById('hidden-discount');
+    const secondWarning = document.getElementById('second-warning');
+    const price = parseInt(totalPrice.innerText);
+
+    if (couponField.value === 'NEW15') {
+        const discount_Price = price * (15 / 100);
+        discounted.innerText = discount_Price;
+        hiddenDiscount.classList.remove('hidden');
+        const sum = price - discount_Price;
+        grandPrice.innerText = sum;
+        secondWarning.classList.add('hidden');
+    }
+    else if(couponField.value === 'Couple20'){
+        const discount_Price = price * (20 / 100);
+        discounted.innerText = discount_Price;
+        hiddenDiscount.classList.remove('hidden');
+        const sum = price - discount_Price;
+        grandPrice.innerText = sum;
+        secondWarning.classList.add('hidden');
+    }
+    else{
+        hiddenDiscount.classList.add('hidden');
+        grandPrice.innerText = price;
+        secondWarning.classList.remove('hidden');
+        console.log('Warning: Wrong Coupon Code!');
+    }
+    
 }
 
