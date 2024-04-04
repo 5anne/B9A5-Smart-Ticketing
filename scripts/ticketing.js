@@ -68,15 +68,15 @@ function changeNow(button) {
         }
         const couponField = document.getElementById('coupon-field');
         couponField.disabled = false;
-
-
+        const couponButton = document.getElementById('coupon-button');
+        couponButton.disabled = false;
+        
     }
 
     const fortySeats = document.getElementById('forty-seats');
     const seatNumber = parseInt(fortySeats.innerText);
     const result = seatNumber - 1;
     fortySeats.innerText = result;
-
 
 }
 
@@ -114,6 +114,22 @@ function discountPrice() {
         secondWarning.classList.remove('hidden');
         console.log('Warning: Wrong Coupon Code!');
     }
-    
+
 }
 
+function enableNext(event) {
+    const numberInput = parseInt(event.value);
+    if(count > 0 && typeof numberInput === "number"){
+        document.getElementById('next-button').disabled = false;
+    } else{
+        document.getElementById('third-warning').classList.remove('hidden');
+    }
+}
+
+function confirmNow(event) {
+    location.replace("http://127.0.0.1:5500/index2.html");
+}
+
+function backNow(event) {
+    location.replace("http://127.0.0.1:5500/index.html");
+}
