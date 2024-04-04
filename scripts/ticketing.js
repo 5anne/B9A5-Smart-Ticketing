@@ -12,7 +12,7 @@ function changeNow(button) {
     button.disabled = true;
 
     count++;
-    console.log(count);
+    // console.log(count);
     var selectedSeats = document.getElementById('selected-seats');
     var selectedSeatNumber = parseInt(selectedSeats.innerText);
     selectedSeatNumber = count;
@@ -70,7 +70,7 @@ function changeNow(button) {
         couponField.disabled = false;
         const couponButton = document.getElementById('coupon-button');
         couponButton.disabled = false;
-        
+
     }
 
     const fortySeats = document.getElementById('forty-seats');
@@ -83,7 +83,8 @@ function changeNow(button) {
 function discountPrice() {
 
     const couponField = document.getElementById('coupon-field');
-    console.log(couponField.value);
+    const couponButton = document.getElementById('coupon-button');
+    // console.log(couponField.value);
 
     const totalPrice = document.getElementById('total-price');
     const grandPrice = document.getElementById('grand-price');
@@ -96,14 +97,19 @@ function discountPrice() {
         const discount_Price = price * (15 / 100);
         discounted.innerText = discount_Price;
         hiddenDiscount.classList.remove('hidden');
+        couponField.classList.add('hidden');
+        couponButton.classList.add('hidden');
         const sum = price - discount_Price;
         grandPrice.innerText = sum;
         secondWarning.classList.add('hidden');
+        
     }
     else if(couponField.value === 'Couple20'){
         const discount_Price = price * (20 / 100);
         discounted.innerText = discount_Price;
         hiddenDiscount.classList.remove('hidden');
+        couponField.classList.add('hidden');
+        couponButton.classList.add('hidden');
         const sum = price - discount_Price;
         grandPrice.innerText = sum;
         secondWarning.classList.add('hidden');
@@ -112,7 +118,7 @@ function discountPrice() {
         hiddenDiscount.classList.add('hidden');
         grandPrice.innerText = price;
         secondWarning.classList.remove('hidden');
-        console.log('Warning: Wrong Coupon Code!');
+        // console.log('Warning: Wrong Coupon Code!');
     }
 
 }
