@@ -133,9 +133,9 @@ function enableNext(event) {
 }
 
 function confirmNow(event) {
-    location.replace("http://127.0.0.1:5500/index2.html");
+    location.replace("https://5anne.github.io/B9A5-Smart-Ticketing/index2.html");
 }
 
 function backNow(event) {
-    location.replace("http://127.0.0.1:5500/index.html");
+    location.replace("https://5anne.github.io/B9A5-Smart-Ticketing/index.html");
 }
